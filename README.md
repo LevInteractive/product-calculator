@@ -1,5 +1,7 @@
 # Product Calculator
 
+This is a JavaScript Engineer evaluation application.
+
 ## Overview
 
 Your objective is to build a product calculator which allows you to add and
