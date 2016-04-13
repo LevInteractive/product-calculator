@@ -1,0 +1,26 @@
+[
+  {
+    "id": 0,
+    "name": "Roofing",
+    "fixed": false,
+    "cost": 4.25
+  },
+  {
+    "id": 1,
+    "name": "Window",
+    "fixed": true,
+    "cost": 55
+  },
+  {
+    "id": 2,
+    "name": "Computer",
+    "fixed": true,
+    "cost": 2500.50
+  }
+  {
+    "id": 3,
+    "name": "Carpet",
+    "fixed": false,
+    "cost": 1.50
+  }
+]
