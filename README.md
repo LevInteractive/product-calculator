@@ -32,13 +32,14 @@ Window | 5 _(number input - ability to edit. Defaults to 1.)_ | $275 | REMOVE _(
 
 ## Project Guidelines
 
-* Use React + es6 + modules + clean code
+* Use React + es6 + modules + clean code.
 * You can use flux inspired architecture.
-* You should not need to add any custom css. Simply use [React Bootstrap](http://react-bootstrap.github.io/components.html). The CSS [is already included](server/app.html). You should put careful thought in to which components you decide to use so the tool is user-friendly as possible.
-* You can use any other framework/lib you would like, but simplicity is best.
-* You can not use jQuery. kthx.
+* You can use clean and meaningful syntax. Don't over complicate for the sake of being fancy.
+* You can use any other library you would like, but simplicity and minimalism is best.
 * You can only use `npm` as a dependency manager (not bower or anything else). Just add to the the current [package.json](src/package.json) file.
-* You do not need to touch anything in /server/.
+* You can not use jQuery. kthx.
+* You can not add any custom css. Simply use [React Bootstrap](http://react-bootstrap.github.io/components.html). The CSS [is already included](server/app.html). You should put careful thought in to which components you decide to use so the tool is user-friendly as possible.
+* You can not touch anything in /server/.
 * Calculator must load in initial products upon page load (api/products).
 * Pay attention to the dot files in the root of the project.
 * Bonus points for unit testing.
