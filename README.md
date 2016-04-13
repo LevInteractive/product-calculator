@@ -7,10 +7,8 @@ remove products while calculating the cost of the products as you change them.
 
 The component will need to have a button to add a new product, a table (or
 table-like) display of current products, a button to remove a product, and
-finally a total cost for all products. The cost is calculated differently based
-on whether or not the product is considered `fixed` (details below). Lastly, the
-component will need to load some initial products via a ajax request to the fake
-api (again, details below).
+finally a total cost for all products. Lastly, the component will need to load
+some initial products via a ajax request to the fake api (again, details below).
 
 There are 2 API ajax requests you'll need to make:
 
@@ -82,7 +80,6 @@ This will be a collection of all available products in the (fake) database.
   {
     "id": 3,
     "name": "Name of product",
-    "fixed": false,
     "cost": 3.50
   },
   ...
@@ -90,8 +87,7 @@ This will be a collection of all available products in the (fake) database.
 
 * `id`: This will be a unique id for the product.
 * `name`: The name of the product.
-* `fixed`: Specifies whether or not this should be calculated by the quanitity or not. For example: if *not* fixed, then you would do `cost` * `quanity` = cost. If *is* fixed, the cost would simply just be the `cost`.
-* `cost`: The amount the product costs (if not fixed, the amount a single unit costs)
+* `cost`: The amount the product costs.
 
 ##### A saved product (/api/products)
 
@@ -110,4 +106,4 @@ The will be loaded to the calculator initially.
 
 * `id`: A unqiue id.
 * `productId`: This id corresponds to the product's id.
-* `quantity`: The number of products/units. If not fixed, this will be used to calculate cost.
+* `quantity`: The number of products/units. Cost for product will be `quantity` * `cost`.
