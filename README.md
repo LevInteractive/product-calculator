@@ -8,7 +8,8 @@ remove products while calculating the cost of the products as you change them.
 The component will need to have a button to add a new product, a table (or
 table-like) display of current products, a button to remove a product, and
 finally a total cost for all products. Lastly, the component will need to load
-some initial products via a ajax request to the fake api (again, details below).
+some initial products via a ajax request to the fake API. Please see details
+below.
 
 There are 2 API ajax requests you'll need to make:
 
@@ -22,8 +23,8 @@ ADD NEW PRODUCT _(add button + a dropdown containing all available products)_
 
 *Product* | *Quantity* | *Cost* | *Action*
 --- | --- | --- | ---
-Roofing | 100 _(live input - ability to edit. Defaults to 1.)_ | $425 | REMOVE _(button)_
-Window | 5 _(live input - ability to edit. Defaults to 1.)_ | $275 | REMOVE _(button)_
+Roofing | 100 _(number input - ability to edit. Defaults to 1.)_ | $425 | REMOVE _(button)_
+Window | 5 _(number input - ability to edit. Defaults to 1.)_ | $275 | REMOVE _(button)_
 
 *Total:* $700
 
