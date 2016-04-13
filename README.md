@@ -46,10 +46,12 @@ Window | 5 _(live input - ability to edit. Defaults to 1.)_ | $275 | REMOVE _(bu
 
 ## Getting Started
 
-Dependencies:
+*Dependencies:*
 
 * node.js >= v4.1.0
 * gulp (`npm install -g gulp`)
+
+*Setup:*
 
 1. Clone the project and `cd` in to it.
 2. Start up the server with by running `node server/server.js`.
