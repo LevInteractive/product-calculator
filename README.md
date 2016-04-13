@@ -1,6 +1,7 @@
 # Product Calculator
 
-This is a JavaScript Engineer evaluation application.
+This is a JavaScript Engineer evaluation project. You should set your own
+deadline, and then **meet it**.
 
 ## Overview
 
