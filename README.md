@@ -71,9 +71,9 @@ Server listening on localhost:3030.
 -----------------------------------------------------------
 ```
 
-## Data Structures
+## Data Structures (API)
 
-#### A product (/all-products)
+##### A product (/api/all-products)
 
 This will be a collection of all available products in the (fake) database.
 
@@ -93,7 +93,7 @@ This will be a collection of all available products in the (fake) database.
 * `fixed`: Specifies whether or not this should be calculated by the quanitity or not. For example: if *not* fixed, then you would do `cost` * `quanity` = cost. If *is* fixed, the cost would simply just be the `cost`.
 * `cost`: The amount the product costs (if not fixed, the amount a single unit costs)
 
-#### A saved product (/products)
+##### A saved product (/api/products)
 
 This will be a collection of products that have been saved to the (fake) database.
 The will be loaded to the calculator initially.
