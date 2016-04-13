@@ -20,7 +20,7 @@ There are 2 API ajax requests you'll need to make:
 
 ##### Wireframes
 
-ADD NEW PRODUCT _(button - a dropdown containing all available products)_
+ADD NEW PRODUCT _(add button + a dropdown containing all available products)_
 
 *Product* | *Quantity* | *Cost* | *Action*
 --- | --- | --- | ---
