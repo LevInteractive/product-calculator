@@ -16,17 +16,18 @@ Window | 5 | $275 | REMOVE _(button)_
 
 ----------------------------------------------
 
-## Code Guidelines
+## Project Guidelines
 
 * Use React + es6 + modules + clean code
 * You can use flux inspired architecture.
 * You should not need to add any custom css. Simply use [React Bootstrap](http://react-bootstrap.github.io/components.html). The CSS [is already included](server/app.html).
 * You can use any other framework/lib you would like, but simplicity is best.
-* Don't use jQuery. kthx.
-* No need to touch anything in /server/.
+* You can not use jQuery. kthx.
+* You can only use `npm` as a dependency manager (not bower or anything else). Just add to the the current [package.json](src/package.json) file.
+* You do not need to touch anything in /server/.
 * Calculator must load in initial products upon page load (api/products).
-* Only use `npm` as a dependency manager (not bower or anything else). Just add to the the current [package.json](src/package.json) file.
 * Bonus points for unit testing.
+* Pay attention to the dot files in the root of the project.
 
 ## Getting Started
 
@@ -34,7 +35,7 @@ Window | 5 | $275 | REMOVE _(button)_
 2. Start up the server with by running `node server/server.js`.
 3. Open in a new shell and `cd` in to src/.
 4. Run `npm install` and finally, `gulp watch`. (make sure you have gulp installed)
-5. Now you can make changes to files in ProductCalculator and a new server/app.js will automatically be compiled for you.
+5. Now you can make changes to files in ProductCalculator and a new [server/app.js](server/app.js) will automatically be compiled for you.
 
 ```bash
 $ ~ node server/server.js
@@ -62,10 +63,10 @@ This will be a collection of all available products in the (fake) database.
 ```json
 [
   {
-    "id": <int>,
-    "name": <string>
-    "fixed": <boolean>,
-    "cost": <float>
+    "id": 3,
+    "name": "Name of product",
+    "fixed": false,
+    "cost": 3.50
   },
   ...
 ```
@@ -83,9 +84,9 @@ The will be loaded to the calculator initially.
 ```json
 [
   {
-    "id": <int>,
-    "productId": <int>,
-    "quantity": <int>
+    "id": 0,
+    "productId": 3,
+    "quantity": 200
   },
   ...
 ```
