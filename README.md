@@ -1,6 +1,6 @@
 # Product Calculator
 
-##### Overview
+## Overview
 
 Your objective is to build a product calculator which allows you to add and
 remove products while calculating the cost of the products as you change them.
@@ -17,7 +17,7 @@ There are 2 API ajax requests you'll need to make:
   2. *http://localhost:3030/api/products* Retrieves products that are to be pre-loaded in to the calculator.
 
 
-##### Wireframes
+## Wireframes
 
 ADD NEW PRODUCT _(add button + a dropdown containing all available products)_
 
