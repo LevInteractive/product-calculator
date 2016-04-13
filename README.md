@@ -13,7 +13,7 @@ below.
 
 There are 2 API ajax requests you'll need to make:
 
-  1. *http://localhost:3030/api/all-products* Retrieves all the products available to the calculator.
+  1. *http://localhost:3030/api/all-products* Retrieves all the products available to the calculator. These should show in a dropdown next to the ADD button.
   2. *http://localhost:3030/api/products* Retrieves products that are to be pre-loaded in to the calculator.
 
 
@@ -34,14 +34,15 @@ Window | 5 _(number input - ability to edit. Defaults to 1.)_ | $275 | REMOVE _(
 
 * Use React + es6 + modules + clean code
 * You can use flux inspired architecture.
-* You should not need to add any custom css. Simply use [React Bootstrap](http://react-bootstrap.github.io/components.html). The CSS [is already included](server/app.html).
+* You should not need to add any custom css. Simply use [React Bootstrap](http://react-bootstrap.github.io/components.html). The CSS [is already included](server/app.html). You should put careful thought in to which components you decide to use so the tool is user-friendly as possible.
 * You can use any other framework/lib you would like, but simplicity is best.
 * You can not use jQuery. kthx.
 * You can only use `npm` as a dependency manager (not bower or anything else). Just add to the the current [package.json](src/package.json) file.
 * You do not need to touch anything in /server/.
 * Calculator must load in initial products upon page load (api/products).
-* Bonus points for unit testing.
 * Pay attention to the dot files in the root of the project.
+* Bonus points for unit testing.
+* Bonus points if it works offline.
 
 ## Getting Started
 
