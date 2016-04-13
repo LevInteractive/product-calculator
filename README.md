@@ -44,6 +44,7 @@ Window | 5 _(number input - ability to edit. Defaults to 1.)_ | $275 | REMOVE _(
 * Pay attention to the dot files in the root of the project.
 * Bonus points for unit testing.
 * Bonus points if it works offline.
+* Bonus points if you give suggestions to make this evaluation better.
 
 ## Getting Started
 
