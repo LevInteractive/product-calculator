@@ -1,16 +1,29 @@
 # Product Calculator
 
-Your objective is to build a product calculator that allows you to add and
+Your objective is to build a product calculator which allows you to add and
 remove products while calculating the cost of the products as you change them.
 
-## Wireframes
+The component will need to have a button to add a new product, a table (or
+table-like) display of current products, a button to remove a product, and
+finally a total cost for all products. The cost is calculated differently based
+on whether or not the product is considered `fixed` (details below). Lastly, the
+component will need to load some initial products via a ajax request to the fake
+api (again, details below).
 
-ADD NEW PRODUCT _(button)_
+There are 2 API ajax requests you'll need to make:
+
+  1. *http://localhost:3030/api/all-products* Retrieves all the products available to the calculator.
+  2. *http://localhost:3030/api/products* Retrieves products that are to be pre-loaded in to the calculator.
+
+
+##### Wireframes
+
+ADD NEW PRODUCT _(button)_ (a dropdown containing all available products)
 
 *Product* | *Quantity* | *Cost* | *Action*
 --- | --- | --- | ---
-Roofing | 100 | $425 | REMOVE _(button)_
-Window | 5 | $275 | REMOVE _(button)_
+Roofing | 100 _(live input - ability to edit. Defaults to 1.)_ | $425 | REMOVE _(button)_
+Window | 5 _(live input - ability to edit. Defaults to 1.)_ | $275 | REMOVE _(button)_
 
 *Total:* $700
 
@@ -48,11 +61,6 @@ Server listening on localhost:3030.
  * Products index: http://localhost:3030/api/all-products
 -----------------------------------------------------------
 ```
-
-There are 2 API ajax requests you'll need to make:
-
-  1. *http://localhost:3030/api/all-products* Retrieves all the products available to the calculator.
-  2. *http://localhost:3030/api/products* Retrieves products that are to be pre-loaded in to the calculator.
 
 ## Data Structures
 
