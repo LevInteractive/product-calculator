@@ -22,7 +22,7 @@ const server = http.createServer((req, res) => {
     renderPage(res, 'application/json', `${path}.json`);
   } else if (/\.js$/.test(path)) {
     renderPage(res, 'application/javascript', path);
-  } else if (/(\.js|\.js\.map)$/.test(path)) {
+  } else if (/(\.json|\.js\.map)$/.test(path)) {
     renderPage(res, 'application/json', path);
   } else {
     renderPage(res, 'text/html', 'app.html');
